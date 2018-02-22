@@ -1,0 +1,386 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Fri Feb  9 14:24:00 2018
+| Host         : ensc-pit-13 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 70
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-16 | Warning  | Large setup violation       | 21         |
+| TIMING-17 | Warning  | Non-clocked sequential cell | 49         |
++-----------+----------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.890 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[18]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[58]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.892 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[21]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[29]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.903 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[21]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[61]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.913 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[17]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[57]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.925 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[16]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[56]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.002 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[16]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[24]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.014 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[14]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[54]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -2.030 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[19]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[59]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -2.037 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[15]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[23]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -2.069 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[14]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[22]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -2.078 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[19]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[27]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -2.098 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[17]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[25]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -2.111 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[20]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[28]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -2.131 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[22]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[62]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -2.154 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[15]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[55]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -2.202 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[20]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[60]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -2.313 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[23]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[31]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -2.413 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_l_freeze_100_reg[23]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[63]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -2.462 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[22]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[30]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -3.070 ns between design_1_i/audio_testbench_0/U0/i_audio/hphone_r_freeze_100_reg[18]/C (clocked by clk_100) and design_1_i/audio_testbench_0/U0/i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[26]/D (clocked by zed_audio_clk_48M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -4.552 ns between design_1_i/audio_testbench_0/U0/i_audio/sample_clk_48k_d3_48_reg__0/C (clocked by zed_audio_clk_48M) and design_1_i/audio_testbench_0/U0/i_audio/sample_clk_48k_d4_100_reg/D (clocked by clk_100). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/frequency_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/audio_testbench_0/U0/index_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+

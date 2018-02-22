@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/8125/src/ADAU1761_interface.vhd" \
+"../../../bd/design_1/ipshared/8125/src/adau1761_configuraiton_data.vhd" \
+"../../../bd/design_1/ipshared/8125/src/adau1761_izedboard.vhd" \
+"../../../bd/design_1/ipshared/8125/src/audio_top.vhd" \
+"../../../bd/design_1/ipshared/8125/src/clocking.vhd" \
+"../../../bd/design_1/ipshared/8125/src/i2c.vhd" \
+"../../../bd/design_1/ipshared/8125/src/i2s_data_interface.vhd" \
+"../../../bd/design_1/ipshared/8125/src/i3c2.vhd" \
+"../../../bd/design_1/ipshared/8125/src/audio_testbench.vhd" \
+"../../../bd/design_1/ip/design_1_audio_testbench_0_0_1/sim/design_1_audio_testbench_0_0.vhd" \
+
+nosort

@@ -1,0 +1,41 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port AC_GPIO2_0 -pg 1 -y 120 -defaultsOSRD
+preplace port AC_ADR0_0 -pg 1 -y 50 -defaultsOSRD
+preplace port DDR -pg 1 -y 260 -defaultsOSRD
+preplace port AC_GPIO1_0 -pg 1 -y 100 -defaultsOSRD
+preplace port AC_GPIO3_0 -pg 1 -y 170 -defaultsOSRD
+preplace port clk_100_0 -pg 1 -y 80 -defaultsOSRD
+preplace port AC_MCLK_0 -pg 1 -y 110 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 280 -defaultsOSRD
+preplace port AC_SCK_0 -pg 1 -y 130 -defaultsOSRD
+preplace port AC_SDA_0 -pg 1 -y 150 -defaultsOSRD
+preplace port AC_GPIO0_0 -pg 1 -y 90 -defaultsOSRD
+preplace port AC_ADR1_0 -pg 1 -y 70 -defaultsOSRD
+preplace portBus LD_0 -pg 1 -y 170 -defaultsOSRD
+preplace portBus SW_0 -pg 1 -y 150 -defaultsOSRD
+preplace inst audio_testbench_0 -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 340 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 1 NJ
+preplace netloc audio_testbench_0_AC_GPIO0 1 1 1 NJ
+preplace netloc audio_testbench_0_AC_ADR0 1 1 1 NJ
+preplace netloc audio_testbench_0_LD 1 1 1 NJ
+preplace netloc audio_testbench_0_AC_ADR1 1 1 1 NJ
+preplace netloc clk_100_0_1 1 0 1 20J
+preplace netloc SW_0_1 1 0 1 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 1 NJ
+preplace netloc AC_GPIO1_0_1 1 0 1 20J
+preplace netloc Net 1 1 1 NJ
+preplace netloc AC_GPIO2_0_1 1 0 1 20J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 20 470 440
+preplace netloc audio_testbench_0_AC_SCK 1 1 1 NJ
+preplace netloc AC_GPIO3_0_1 1 0 1 20J
+preplace netloc audio_testbench_0_AC_MCLK 1 1 1 NJ
+levelinfo -pg 1 0 230 460 -top 0 -bot 480
+",
+}
+{
+   da_ps7_cnt: "2",
+}
