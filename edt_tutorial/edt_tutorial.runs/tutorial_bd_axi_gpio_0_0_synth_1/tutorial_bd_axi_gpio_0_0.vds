@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jan 13 15:44:55 2018
+# Process ID: 5660
+# Current directory: C:/Users/yangjiel/edt_tutorial/edt_tutorial.runs/tutorial_bd_axi_gpio_0_0_synth_1
+# Command line: vivado.exe -log tutorial_bd_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tutorial_bd_axi_gpio_0_0.tcl
+# Log file: C:/Users/yangjiel/edt_tutorial/edt_tutorial.runs/tutorial_bd_axi_gpio_0_0_synth_1/tutorial_bd_axi_gpio_0_0.vds
+# Journal file: C:/Users/yangjiel/edt_tutorial/edt_tutorial.runs/tutorial_bd_axi_gpio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source tutorial_bd_axi_gpio_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 407.734 ; gain = 95.000
+INFO: [Synth 8-638] synthesizing module 'tutorial_bd_axi_gpio_0_0' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ip/tutorial_bd_axi_gpio_0_0/synth/tutorial_bd_axi_gpio_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-256] done synthesizing module 'tutorial_bd_axi_gpio_0_0' (8#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ip/tutorial_bd_axi_gpio_0_0/synth/tutorial_bd_axi_gpio_0_0.vhd:86]
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 451.820 ; gain = 139.086
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 451.820 ; gain = 139.086
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 783.285 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 783.285 ; gain = 470.551
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 783.285 ; gain = 470.551
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     8|
+|3     |LUT3 |     9|
+|4     |LUT4 |    10|
+|5     |LUT5 |    11|
+|6     |LUT6 |     6|
+|7     |FDR  |     4|
+|8     |FDRE |    34|
+|9     |FDSE |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 783.285 ; gain = 470.551
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 783.285 ; gain = 482.949

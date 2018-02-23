@@ -1,0 +1,94 @@
+/*
+* Copyright (c) 2009 Xilinx, Inc. All rights reserved.
+*
+* Xilinx, Inc.
+* XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+* COURTESY TO YOU. BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+* ONE POSSIBLE IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+* STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+* IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+* FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+* XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+* THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+* ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+* FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+* AND FITNESS FOR A PARTICULAR PURPOSE.
+*
+*/
+/*
+* helloworld.c: simple test application
+*/
+#include <stdio.h>
+#include "platform.h"
+#include "xil_types.h"
+#include "xgpio.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "xgpiops.h"
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+static XGpioPs psGpioInstancePtr;
+static int iPinNumber = 7;
+XScuGic InterruptController; /* Instance of the Interrupt Controller */
+
+int main()
+{
+	static XGpio GPIOInstance_Ptr;
+	XGpioPs_Config*GpioConfigPtr;
+	XTmrCtr TimerInstancePtr;
+	int xStatus;
+	u32 Readstatus=0,OldReadStatus=0;
+	//u32 EffectiveAdress = 0xE000A000;
+	int iPinNumberEMIO = 54;
+	u32 uPinDirectionEMIO = 0x0;
+	// Input Pin
+	// Pin direction
+	u32 uPinDirection = 0x1;
+	int exit_flag,choice,internal_choice;
+	init_platform();
+	/* data = *(u32 *)(0x42800004);
+	print("OK \n");
+	data = *(u32 *)(0x41200004);
+	print("OK-1 \n");
+	*/
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//Step-7 :PS GPIO Intialization
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+	if(GpioConfigPtr == NULL)
+	return XST_FAILURE;
+	xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr,
+	GpioConfigPtr,
+	GpioConfigPtr->BaseAddr);
+	if(XST_SUCCESS != xStatus)
+	print(" PS GPIO INIT FAILED \n\r");
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//Step-8 :PS GPIO pin setting to Output
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	XGpioPs_SetDirectionPin(&psGpioInstancePtr, iPinNumber,uPinDirection);
+	XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, iPinNumber,1);
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//Step-9 :EMIO PIN Setting to Input port
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	XGpioPs_SetDirectionPin(&psGpioInstancePtr,
+	iPinNumberEMIO,uPinDirectionEMIO);
+	XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, iPinNumberEMIO,0);
+	XGpioPs_WritePin(&psGpioInstancePtr,iPinNumber,1);
+	int magx = 0, magy = 0, magz = 0;
+	while (1){
+		if (inbyte() == '-'){
+			magx = inbyte();
+			magy = inbyte();
+			magz = inbyte();
+		}
+		if (inbyte() == 'p'){
+			XGpioPs_WritePin(&psGpioInstancePtr,iPinNumber,0);
+			xil_printf("magx is: %d\n",magx);
+			xil_printf("magx is: %d\n",magx);
+			xil_printf("magx is: %d\n",magx);
+		}
+	}
+	return 0;
+}
+

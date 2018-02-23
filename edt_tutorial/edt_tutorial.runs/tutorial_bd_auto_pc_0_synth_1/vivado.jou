@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jan 13 15:47:59 2018
+# Process ID: 8072
+# Current directory: C:/Users/yangjiel/edt_tutorial/edt_tutorial.runs/tutorial_bd_auto_pc_0_synth_1
+# Command line: vivado.exe -log tutorial_bd_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tutorial_bd_auto_pc_0.tcl
+# Log file: C:/Users/yangjiel/edt_tutorial/edt_tutorial.runs/tutorial_bd_auto_pc_0_synth_1/tutorial_bd_auto_pc_0.vds
+# Journal file: C:/Users/yangjiel/edt_tutorial/edt_tutorial.runs/tutorial_bd_auto_pc_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source tutorial_bd_auto_pc_0.tcl -notrace

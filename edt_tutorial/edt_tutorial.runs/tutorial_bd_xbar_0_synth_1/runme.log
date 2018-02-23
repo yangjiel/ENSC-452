@@ -1,0 +1,77 @@
+
+*** Running vivado
+    with args -log tutorial_bd_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tutorial_bd_xbar_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source tutorial_bd_xbar_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 417.266 ; gain = 99.461
+INFO: [Synth 8-638] synthesizing module 'tutorial_bd_xbar_0' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ip/tutorial_bd_xbar_0/synth/tutorial_bd_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_15_axi_crossbar' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_15_crossbar_sasd' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_15_addr_decoder' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_15_addr_decoder' (3#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_15_decerr_slave' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_15_decerr_slave' (4#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_15_addr_arbiter_sasd' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_15_addr_arbiter_sasd' (5#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_15_splitter' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_15_splitter' (6#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_15_splitter__parameterized0' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_15_splitter__parameterized0' (6#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice' (8#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_15_crossbar_sasd' (9#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_15_axi_crossbar' (10#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ipshared/a1b8/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'tutorial_bd_xbar_0' (11#1) [c:/Users/yangjiel/edt_tutorial/edt_tutorial.srcs/sources_1/bd/tutorial_bd/ip/tutorial_bd_xbar_0/synth/tutorial_bd_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 539.625 ; gain = 221.820
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 539.625 ; gain = 221.820
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 793.555 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 793.555 ; gain = 475.750
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 793.555 ; gain = 475.750
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    12|
+|3     |LUT3 |     5|
+|4     |LUT4 |    78|
+|5     |LUT5 |    17|
+|6     |LUT6 |    55|
+|7     |FDRE |   130|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 793.555 ; gain = 475.750
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 793.555 ; gain = 482.699

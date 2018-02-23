@@ -1,0 +1,122 @@
+/*
+
+Xilinx Vivado v2017.3 (64-bit) [Major: 2017, Minor: 3]
+SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+
+Process ID: 9404
+License: Customer
+
+Current time: 	Tue Feb 20 17:21:29 PST 2018
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1600x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 326 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre/bin/java.exe
+
+User name: 	yangjiel
+User home directory: C:/Users/yangjiel
+User working directory: U:/452/edt_tutorial
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.3
+RDI_DATADIR: C:/Xilinx/Vivado/2017.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.3/bin
+
+User preferences location: C:/Users/yangjiel/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/yangjiel/AppData/Roaming/Xilinx/Vivado/2017.3/vivado.xml
+Vivado layouts directory: C:/Users/yangjiel/AppData/Roaming/Xilinx/Vivado/2017.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.3/lib/classes/planAhead.jar
+Vivado log file location: 	U:/452/edt_tutorial/vivado.log
+Vivado journal file location: 	U:/452/edt_tutorial/vivado.jou
+Engine tmp dir: 	U:/452/edt_tutorial/.Xil/Vivado-9404-ensc-pit-13
+
+GUI allocated memory:	183 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 548 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 43 MB (+43080kb) [00:00:05]
+// [Engine Memory]: 516 MB (+389630kb) [00:00:05]
+// bs (cl):  Open Project : addNotify
+// Opening Vivado Project: U:\452\edt_tutorial\edt_tutorial.xpr. Version: Vivado v2017.3 
+// Tcl Message: open_project U:/452/edt_tutorial/edt_tutorial.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 55 MB (+9490kb) [00:00:08]
+// [Engine Memory]: 550 MB (+8586kb) [00:00:08]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 33 MB. Current time: 2/20/18 5:21:31 PM PST
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 578 MB. GUI used memory: 33 MB. Current time: 2/20/18 5:22:01 PM PST
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 590 MB (+12594kb) [00:00:43]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 631 MB (+12229kb) [00:00:52]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 67 MB (+9985kb) [00:00:58]
+// Tcl Message: open_project U:/452/edt_tutorial/edt_tutorial.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'U:/edt_tutorial' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 669 MB. GUI used memory: 43 MB. Current time: 2/20/18 5:22:20 PM PST
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:53 . Memory (MB): peak = 892.863 ; gain = 117.395 
+// [Engine Memory]: 695 MB (+34225kb) [00:00:59]
+// Project name: edt_tutorial; location: U:/452/edt_tutorial; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bs (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 71 MB (+1031kb) [00:01:56]
+// Elapsed time: 80 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tutorial_bd_wrapper (tutorial_bd_wrapper.v)]", 1, true); // B (D, cl) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tutorial_bd_wrapper (tutorial_bd_wrapper.v)]", 1); // B (D, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cl, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cl, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cl, Popup.HeavyWeightWindow)
+// Elapsed time: 13 seconds
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (cl, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cl): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cl)
+// Tcl Message: launch_sdk -workspace U:/452/edt_tutorial/edt_tutorial.sdk -hwspec U:/452/edt_tutorial/edt_tutorial.sdk/tutorial_bd_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace U:/452/edt_tutorial/edt_tutorial.sdk -hwspec U:/452/edt_tutorial/edt_tutorial.sdk/tutorial_bd_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 75 MB (+314kb) [00:02:38]
+// [GUI Memory]: 81 MB (+1643kb) [00:03:36]
+// [GUI Memory]: 85 MB (+594kb) [00:07:01]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 90 MB (+150kb) [00:12:51]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 94 MB (+219kb) [00:28:12]

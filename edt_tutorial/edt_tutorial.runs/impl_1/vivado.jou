@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Jan 19 15:27:10 2018
+# Process ID: 14896
+# Current directory: U:/edt_tutorial/edt_tutorial.runs/impl_1
+# Command line: vivado.exe -log tutorial_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source tutorial_bd_wrapper.tcl -notrace
+# Log file: U:/edt_tutorial/edt_tutorial.runs/impl_1/tutorial_bd_wrapper.vdi
+# Journal file: U:/edt_tutorial/edt_tutorial.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source tutorial_bd_wrapper.tcl -notrace

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="tutorial_bd_wrapper_hw_platform_0-device"/>
+	<item value="" key="tutorial_bd_wrapper_hw_platform_1-bmmFile"/>
+	<item value="" key="tutorial_bd_wrapper_hw_platform_0-bmmFile"/>
+	<item value="tutorial_bd_wrapper.bit" key="tutorial_bd_wrapper_hw_platform_1-bitFile"/>
+	<item value="tutorial_bd_wrapper_hw_platform_1" key="programfpga.hwplatform"/>
+	<item value="false" key="tutorial_bd_wrapper_hw_platform_1-partial_bit"/>
+	<item value="Local" key="tutorial_bd_wrapper_hw_platform_0-target"/>
+	<item value="false" key="tutorial_bd_wrapper_hw_platform_0-partial_bit"/>
+	<item value="Local" key="tutorial_bd_wrapper_hw_platform_1-target"/>
+	<item value="Auto Detect" key="tutorial_bd_wrapper_hw_platform_1-device"/>
+	<item value="tutorial_bd_wrapper.bit" key="tutorial_bd_wrapper_hw_platform_0-bitFile"/>
+</section>

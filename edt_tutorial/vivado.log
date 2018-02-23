@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Feb 20 17:21:14 2018
+# Process ID: 9404
+# Current directory: U:/452/edt_tutorial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8832 U:\452\edt_tutorial\edt_tutorial.xpr
+# Log file: U:/452/edt_tutorial/vivado.log
+# Journal file: U:/452/edt_tutorial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/452/edt_tutorial/edt_tutorial.xpr
+INFO: [Project 1-313] Project file moved from 'U:/edt_tutorial' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:53 . Memory (MB): peak = 892.863 ; gain = 117.395
+update_compile_order -fileset sources_1
+launch_sdk -workspace U:/452/edt_tutorial/edt_tutorial.sdk -hwspec U:/452/edt_tutorial/edt_tutorial.sdk/tutorial_bd_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/452/edt_tutorial/edt_tutorial.sdk -hwspec U:/452/edt_tutorial/edt_tutorial.sdk/tutorial_bd_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
