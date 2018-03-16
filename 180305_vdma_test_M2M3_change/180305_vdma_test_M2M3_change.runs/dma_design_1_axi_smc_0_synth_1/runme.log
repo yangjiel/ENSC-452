@@ -1,0 +1,117 @@
+
+*** Running vivado
+    with args -log dma_design_1_axi_smc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_design_1_axi_smc_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source dma_design_1_axi_smc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 427.727 ; gain = 101.977
+INFO: [Synth 8-638] synthesizing module 'dma_design_1_axi_smc_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/synth/dma_design_1_axi_smc_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_a967' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:10]
+INFO: [Synth 8-638] synthesizing module 'clk_map_imp_1DFYKJD' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:367]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_one_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_0/synth/bd_a967_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconstant_v1_1_3_xlconstant' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0750/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant_v1_1_3_xlconstant' (1#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0750/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_one_0' (2#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_0/synth/bd_a967_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_psr_aclk_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_1/synth/bd_a967_psr_aclk_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50689]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (3#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50689]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_psr_aclk_0' (9#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_1/synth/bd_a967_psr_aclk_0.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'clk_map_imp_1DFYKJD' (10#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:367]
+INFO: [Synth 8-638] synthesizing module 'm00_exit_pipeline_imp_KPAV1E' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:411]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_m00e_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_9/synth/bd_a967_m00e_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_m00e_0' (24#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_9/synth/bd_a967_m00e_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'm00_exit_pipeline_imp_KPAV1E' (25#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:411]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_m00s2a_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_8/synth/bd_a967_m00s2a_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_m00s2a_0' (27#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_8/synth/bd_a967_m00s2a_0.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_s00a2s_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_5/synth/bd_a967_s00a2s_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_s00a2s_0' (29#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_5/synth/bd_a967_s00a2s_0.sv:58]
+INFO: [Synth 8-638] synthesizing module 's00_entry_pipeline_imp_1JYS4O1' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:587]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_s00mmu_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_2/synth/bd_a967_s00mmu_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_s00mmu_0' (33#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_2/synth/bd_a967_s00mmu_0.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_s00sic_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_4/synth/bd_a967_s00sic_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_s00sic_0' (36#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_4/synth/bd_a967_s00sic_0.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_s00tr_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_3/synth/bd_a967_s00tr_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_s00tr_0' (39#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_3/synth/bd_a967_s00tr_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 's00_entry_pipeline_imp_1JYS4O1' (40#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:587]
+INFO: [Synth 8-638] synthesizing module 's00_nodes_imp_1P227QZ' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:871]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_sarn_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_6/synth/bd_a967_sarn_0.sv:58]
+INFO: [Synth 8-638] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-256] done synthesizing module 'xpm_memory_base' (45#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_sarn_0' (54#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_6/synth/bd_a967_sarn_0.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_a967_srn_0' [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_7/synth/bd_a967_srn_0.sv:58]
+INFO: [Synth 8-638] synthesizing module 'xpm_memory_base__parameterized0' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-256] done synthesizing module 'xpm_memory_base__parameterized0' (54#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967_srn_0' (55#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/ip/ip_7/synth/bd_a967_srn_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 's00_nodes_imp_1P227QZ' (56#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:871]
+INFO: [Synth 8-256] done synthesizing module 'bd_a967' (57#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/bd_a967.v:10]
+INFO: [Synth 8-256] done synthesizing module 'dma_design_1_axi_smc_0' (58#1) [c:/Users/jfa49/vdma_test/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/synth/dma_design_1_axi_smc_0.v:57]
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 540.945 ; gain = 215.195
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 540.945 ; gain = 215.195
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.699 . Memory (MB): peak = 1106.480 ; gain = 24.988
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1106.480 ; gain = 780.730
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|inst/i_1/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26   | 
+|inst/i_1/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 101             | RAM32M x 17   | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1106.480 ; gain = 780.730
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1106.480 ; gain = 780.730
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     8|
+|2     |LUT1    |    24|
+|3     |LUT2    |    49|
+|4     |LUT3    |    25|
+|5     |LUT4    |   315|
+|6     |LUT5    |    64|
+|7     |LUT6    |   209|
+|8     |RAM32M  |    23|
+|9     |SRL16   |     1|
+|10    |SRLC32E |     5|
+|11    |FDR     |     4|
+|12    |FDRE    |   792|
+|13    |FDSE    |    41|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1106.480 ; gain = 780.730
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1106.480 ; gain = 793.195

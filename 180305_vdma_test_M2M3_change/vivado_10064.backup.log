@@ -1,0 +1,292 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar  7 20:19:16 2018
+# Process ID: 10064
+# Current directory: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13288 U:\180306_move_everything_from_pit9\180305_vdma_test_M2M3_change\180305_vdma_test_M2M3_change.xpr
+# Log file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/vivado.log
+# Journal file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'dma_design_1_auto_pc_0' generated file not found 'u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:01:20 . Memory (MB): peak = 912.031 ; gain = 136.941
+update_compile_order -fileset sources_1
+open_bd_design {U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd}
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:module_ref:vga_logic:1.0 - vga_logic_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:module_ref:LSFR:1.0 - LSFR_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <dma_design_1> from BD file <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 976.094 ; gain = 64.063
+delete_bd_objs [get_bd_nets LSFR_0_Q]
+set_property location {3 694 138} [get_bd_cells axi_gpio_1]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins LSFR_0/Q]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_1/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+open_bd_design {U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property location {4 985 284} [get_bd_cells axi_gpio_2]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_IS_DUAL {0} CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
+WARNING: [BD 41-1684] Pin /axi_gpio_1/gpio_io_i is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /axi_gpio_1/gpio2_io_o is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets LSFR_0_Q] [get_bd_nets axi_gpio_1_gpio2_io_o]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins LSFR_0/en]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_1/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_2]
+connect_bd_net [get_bd_pins axi_gpio_2/gpio_io_i] [get_bd_pins LSFR_0/Q]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_2/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_2/S_AXI]
+</axi_gpio_2/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41220000 [ 64K ]>
+endgroup
+save_bd_design
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd> 
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ui/bd_f986eb17.ui> 
+delete_bd_objs [get_bd_nets LSFR_0_Q]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_cells axi_gpio_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property location {4 1035 277} [get_bd_cells axi_gpio_2]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_ALL_INPUTS {1} CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_2]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_2/S_AXI]
+</axi_gpio_2/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41220000 [ 64K ]>
+connect_bd_net [get_bd_pins LSFR_0/Q] [get_bd_pins axi_gpio_2/gpio_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_2/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+save_bd_design
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd> 
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_nets LSFR_0_Q] [get_bd_cells axi_gpio_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property location {3 1026 -20} [get_bd_cells axi_gpio_2]
+startgroup
+set_property -dict [list CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_1]
+endgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8}] [get_bd_cells axi_gpio_2]
+delete_bd_objs [get_bd_cells axi_gpio_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8}] [get_bd_cells axi_gpio_2]
+set_property -dict [list CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_2]
+connect_bd_net [get_bd_pins axi_gpio_2/gpio_io_i] [get_bd_pins LSFR_0/Q]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_2/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+set_property location {4 1236 307} [get_bd_cells axi_gpio_2]
+set_property location {3 1264 -13} [get_bd_cells axi_gpio_2]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_2/S_AXI]
+</axi_gpio_2/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41220000 [ 64K ]>
+save_bd_design
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd> 
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ui/bd_f986eb17.ui> 
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
+endgroup
+save_bd_design
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd> 
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ui/bd_f986eb17.ui> 
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ui/bd_f986eb17.ui> 
+reset_run synth_1
+reset_run dma_design_1_xbar_0_synth_1
+reset_run dma_design_1_axi_gpio_1_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd> 
+VHDL Output written to : U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/synth/dma_design_1.vhd
+VHDL Output written to : U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/sim/dma_design_1.vhd
+VHDL Output written to : U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/hdl/dma_design_1_wrapper.vhd
+Exporting to file u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/hw_handoff/dma_design_1_axi_smc_0.hwh
+Generated Block Design Tcl file u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/hw_handoff/dma_design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/dma_design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LSFR_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_auto_pc_0/dma_design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/hw_handoff/dma_design_1.hwh
+Generated Block Design Tcl file U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/hw_handoff/dma_design_1_bd.tcl
+Generated Hardware Definition File U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/synth/dma_design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_design_1_auto_pc_0, cache-ID = 6ad8981a62bd9ad5; cache size = 8.204 MB.
+config_ip_cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1268.598 ; gain = 5.883
+[Wed Mar  7 21:38:38 2018] Launched dma_design_1_xbar_0_synth_1, dma_design_1_axi_gpio_1_0_synth_1, dma_design_1_axi_gpio_2_3_synth_1, synth_1...
+Run output will be captured here:
+dma_design_1_xbar_0_synth_1: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_xbar_0_synth_1/runme.log
+dma_design_1_axi_gpio_1_0_synth_1: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_axi_gpio_1_0_synth_1/runme.log
+dma_design_1_axi_gpio_2_3_synth_1: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_axi_gpio_2_3_synth_1/runme.log
+synth_1: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/synth_1/runme.log
+[Wed Mar  7 21:38:38 2018] Launched impl_1...
+Run output will be captured here: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:01:17 . Memory (MB): peak = 1276.086 ; gain = 148.035
+file copy -force U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/impl_1/dma_design_1_wrapper.sysdef U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+
+launch_sdk -workspace U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk -hwspec U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk -hwspec U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'LSFR' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_0 -L axi_vip_v1_1_0 -L processing_system7_vip_v1_0_2 -L xilinx_vip -prj LSFR_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj LSFR_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/new/LSFR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity LSFR
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1446.070 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 26d99b62bd484046aa1ff2a36402b57b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot LSFR_behav xil_defaultlib.LSFR xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.lsfr
+Built simulation snapshot LSFR_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim/xsim.dir/LSFR_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim/xsim.dir/LSFR_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Mar  7 22:03:06 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 22:03:06 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1446.070 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LSFR_behav -key {Behavioral:sim_1:Functional:LSFR} -tclbatch {LSFR.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+ERROR: [Simtcl 6-50] Simulation engine failed to start: Failed to launch child process (child exe not found).
+Please see the Tcl Console or the Messages for details.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:33 . Memory (MB): peak = 1446.070 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_module_reference dma_design_1_LSFR_0_0
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'reset' as interface 'reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clock' as interface 'clock'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clock': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded dma_design_1_LSFR_0_0 from LSFR_v1_0 1.0 to LSFR_v1_0 1.0
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd> 
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ui/bd_f986eb17.ui> 
+update_module_reference: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1502.543 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+Wrote  : <U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd> 
+VHDL Output written to : U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/synth/dma_design_1.vhd
+VHDL Output written to : U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/sim/dma_design_1.vhd
+VHDL Output written to : U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/hdl/dma_design_1_wrapper.vhd
+Exporting to file u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/hw_handoff/dma_design_1_axi_smc_0.hwh
+Generated Block Design Tcl file u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/hw_handoff/dma_design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_smc_0/bd_0/synth/dma_design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LSFR_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_auto_pc_0/dma_design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/hw_handoff/dma_design_1.hwh
+Generated Block Design Tcl file U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/hw_handoff/dma_design_1_bd.tcl
+Generated Hardware Definition File U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/synth/dma_design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_design_1_auto_pc_0, cache-ID = 6ad8981a62bd9ad5; cache size = 9.223 MB.
+config_ip_cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1529.363 ; gain = 6.516
+[Wed Mar  7 22:48:02 2018] Launched dma_design_1_LSFR_0_0_synth_1, synth_1...
+Run output will be captured here:
+dma_design_1_LSFR_0_0_synth_1: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_LSFR_0_0_synth_1/runme.log
+synth_1: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/synth_1/runme.log
+[Wed Mar  7 22:48:03 2018] Launched impl_1...
+Run output will be captured here: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:17 ; elapsed = 00:01:08 . Memory (MB): peak = 1535.086 ; gain = 32.543
+file copy -force U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/impl_1/dma_design_1_wrapper.sysdef U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+
+launch_sdk -workspace U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk -hwspec U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk -hwspec U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  7 23:07:28 2018...

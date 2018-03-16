@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar  7 21:38:37 2018
+# Process ID: 6216
+# Current directory: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_axi_gpio_1_0_synth_1
+# Command line: vivado.exe -log dma_design_1_axi_gpio_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_design_1_axi_gpio_1_0.tcl
+# Log file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_axi_gpio_1_0_synth_1/dma_design_1_axi_gpio_1_0.vds
+# Journal file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_axi_gpio_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dma_design_1_axi_gpio_1_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 408.508 ; gain = 95.672
+INFO: [Synth 8-638] synthesizing module 'dma_design_1_axi_gpio_1_0' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_gpio_1_0/synth/dma_design_1_axi_gpio_1_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ipshared/e9c1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-256] done synthesizing module 'dma_design_1_axi_gpio_1_0' (8#1) [u:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_gpio_1_0/synth/dma_design_1_axi_gpio_1_0.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 451.969 ; gain = 139.133
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 451.969 ; gain = 139.133
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 783.180 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 783.180 ; gain = 470.344
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 783.180 ; gain = 470.344
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     8|
+|3     |LUT3 |     9|
+|4     |LUT4 |     4|
+|5     |LUT5 |    12|
+|6     |LUT6 |     5|
+|7     |FDRE |    32|
+|8     |FDSE |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 783.180 ; gain = 470.344
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 783.180 ; gain = 482.672

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Mar  8 16:39:09 2018
+# Process ID: 11132
+# Current directory: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4540 U:\180306_move_everything_from_pit9\180305_vdma_test_M2M3_change\180305_vdma_test_M2M3_change.xpr
+# Log file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/vivado.log
+# Journal file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.xpr
+update_compile_order -fileset sources_1
+open_bd_design {U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd}

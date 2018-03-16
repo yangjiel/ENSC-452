@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar  7 13:44:25 2018
+# Process ID: 10992
+# Current directory: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3088 U:\180306_move_everything_from_pit9\180305_vdma_test_M2M3_change\180305_vdma_test_M2M3_change.xpr
+# Log file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/vivado.log
+# Journal file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.xpr
+open_bd_design {U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd}
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.VIDEO_MODE {800x600p} CONFIG.GEN_F0_VSYNC_VSTART {600} CONFIG.GEN_F1_VSYNC_VSTART {600} CONFIG.GEN_HACTIVE_SIZE {800} CONFIG.GEN_HSYNC_END {968} CONFIG.GEN_HFRAME_SIZE {1056} CONFIG.GEN_F0_VSYNC_HSTART {800} CONFIG.GEN_F1_VSYNC_HSTART {800} CONFIG.GEN_F0_VSYNC_HEND {800} CONFIG.GEN_F1_VSYNC_HEND {800} CONFIG.GEN_F0_VFRAME_SIZE {628} CONFIG.GEN_F1_VFRAME_SIZE {628} CONFIG.GEN_F0_VSYNC_VEND {604} CONFIG.GEN_F1_VSYNC_VEND {604} CONFIG.GEN_F0_VBLANK_HEND {800} CONFIG.GEN_F1_VBLANK_HEND {800} CONFIG.GEN_HSYNC_START {840} CONFIG.GEN_VACTIVE_SIZE {600} CONFIG.GEN_F0_VBLANK_HSTART {800} CONFIG.GEN_F1_VBLANK_HSTART {800} CONFIG.GEN_HSYNC_POLARITY {High} CONFIG.GEN_VSYNC_POLARITY {High}] [get_bd_cells v_tc_0]
+endgroup
+create_bd_cell -type module -reference LSFR LSFR_0
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins LSFR_0/clock]
+save_bd_design
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {40} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property location {6.5 2491 122} [get_bd_cells axi_gpio_1]
+set_property location {7 2490 130} [get_bd_cells axi_gpio_1]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_GPIO2_WIDTH {1} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS {1} CONFIG.C_ALL_INPUTS_2 {0} CONFIG.C_ALL_OUTPUTS {0} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_1]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins LSFR_0/Q]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio2_io_o] [get_bd_pins LSFR_0/en]
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+startgroup
+endgroup
+delete_bd_objs [get_bd_nets LSFR_0_Q]
+delete_bd_objs [get_bd_nets axi_gpio_1_gpio2_io_o]
+startgroup
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_i] [get_bd_pins axi_gpio_0/ip2intc_irpt]
+connect_bd_net [get_bd_pins axi_gpio_0/ip2intc_irpt] [get_bd_pins axi_gpio_1/gpio_io_i]
+endgroup
+undo
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins LSFR_0/Q]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio2_io_o] [get_bd_pins LSFR_0/en]
+save_bd_design
+open_bd_design {U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd}
+reset_run synth_1
+reset_run dma_design_1_processing_system7_0_0_synth_1
+reset_run dma_design_1_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file mkdir U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk
+file copy -force U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/impl_1/dma_design_1_wrapper.sysdef U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+
+launch_sdk -workspace U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk -hwspec U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+startgroup
+endgroup

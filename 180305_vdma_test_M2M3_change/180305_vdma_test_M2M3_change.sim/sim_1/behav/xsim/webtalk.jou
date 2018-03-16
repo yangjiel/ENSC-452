@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar  7 22:03:04 2018
+# Process ID: 9700
+# Current directory: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim/xsim.dir/LSFR_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sim/sim_1/behav/xsim/xsim.dir/LSFR_behav/webtalk/xsim_webtalk.tcl -notrace

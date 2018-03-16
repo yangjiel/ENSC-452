@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar  7 20:19:16 2018
+# Process ID: 10064
+# Current directory: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13288 U:\180306_move_everything_from_pit9\180305_vdma_test_M2M3_change\180305_vdma_test_M2M3_change.xpr
+# Log file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/vivado.log
+# Journal file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.xpr
+update_compile_order -fileset sources_1
+open_bd_design {U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd}
+delete_bd_objs [get_bd_nets LSFR_0_Q]
+set_property location {3 694 138} [get_bd_cells axi_gpio_1]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins LSFR_0/Q]
+open_bd_design {U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property location {4 985 284} [get_bd_cells axi_gpio_2]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_IS_DUAL {0} CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
+delete_bd_objs [get_bd_nets LSFR_0_Q] [get_bd_nets axi_gpio_1_gpio2_io_o]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins LSFR_0/en]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_2]
+connect_bd_net [get_bd_pins axi_gpio_2/gpio_io_i] [get_bd_pins LSFR_0/Q]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_2/S_AXI]
+endgroup
+save_bd_design
+delete_bd_objs [get_bd_nets LSFR_0_Q]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_cells axi_gpio_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property location {4 1035 277} [get_bd_cells axi_gpio_2]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_ALL_INPUTS {1} CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_2]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_2/S_AXI]
+connect_bd_net [get_bd_pins LSFR_0/Q] [get_bd_pins axi_gpio_2/gpio_io_i]
+save_bd_design
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_nets LSFR_0_Q] [get_bd_cells axi_gpio_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property location {3 1026 -20} [get_bd_cells axi_gpio_2]
+startgroup
+set_property -dict [list CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_1]
+endgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8}] [get_bd_cells axi_gpio_2]
+delete_bd_objs [get_bd_cells axi_gpio_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8}] [get_bd_cells axi_gpio_2]
+set_property -dict [list CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_2]
+connect_bd_net [get_bd_pins axi_gpio_2/gpio_io_i] [get_bd_pins LSFR_0/Q]
+set_property location {4 1236 307} [get_bd_cells axi_gpio_2]
+set_property location {3 1264 -13} [get_bd_cells axi_gpio_2]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_2/S_AXI]
+save_bd_design
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
+endgroup
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+reset_run dma_design_1_xbar_0_synth_1
+reset_run dma_design_1_axi_gpio_1_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/impl_1/dma_design_1_wrapper.sysdef U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+
+launch_sdk -workspace U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk -hwspec U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+launch_simulation
+update_module_reference dma_design_1_LSFR_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/impl_1/dma_design_1_wrapper.sysdef U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf
+
+launch_sdk -workspace U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk -hwspec U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.sdk/dma_design_1_wrapper.hdf

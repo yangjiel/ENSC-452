@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Mar  6 11:18:07 2018
+# Process ID: 21540
+# Current directory: C:/Users/jfa49/180305_vdma_test_M2M3_change
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18724 C:\Users\jfa49\180305_vdma_test_M2M3_change\180305_vdma_test_M2M3_change.xpr
+# Log file: C:/Users/jfa49/180305_vdma_test_M2M3_change/vivado.log
+# Journal file: C:/Users/jfa49/180305_vdma_test_M2M3_change\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jfa49/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source LSFR.tcl
+add_force {/LSFR/clock} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/LSFR/reset} -radix hex {0 0ns}
+add_force {/LSFR/en} -radix hex {1 0ns}
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run all
+restart
+open_bd_design {C:/Users/jfa49/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.srcs/sources_1/bd/dma_design_1/dma_design_1.bd}
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source LSFR.tcl
+add_force {/LSFR/clock} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/LSFR/reset} -radix hex {0 0ns}
+add_force {/LSFR/en} -radix hex {1 0ns}
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run all
+close_sim
+launch_simulation
+source LSFR.tcl
+add_force {/LSFR/clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/LSFR/reset} -radix hex {0 0ns}
+add_force {/LSFR/en} -radix hex {1 0ns}
+restart
+run all
+close_sim

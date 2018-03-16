@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar  7 21:38:37 2018
+# Process ID: 6216
+# Current directory: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_axi_gpio_1_0_synth_1
+# Command line: vivado.exe -log dma_design_1_axi_gpio_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_design_1_axi_gpio_1_0.tcl
+# Log file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_axi_gpio_1_0_synth_1/dma_design_1_axi_gpio_1_0.vds
+# Journal file: U:/180306_move_everything_from_pit9/180305_vdma_test_M2M3_change/180305_vdma_test_M2M3_change.runs/dma_design_1_axi_gpio_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dma_design_1_axi_gpio_1_0.tcl -notrace

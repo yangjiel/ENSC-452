@@ -1,0 +1,217 @@
+
+*** Running vivado
+    with args -log dma_design_1_axi_vdma_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_design_1_axi_vdma_0_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source dma_design_1_axi_vdma_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 416.391 ; gain = 97.602
+INFO: [Synth 8-638] synthesizing module 'dma_design_1_axi_vdma_0_0' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_vdma_0_0/synth/dma_design_1_axi_vdma_0_0.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:69846]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_rst_module' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:16461]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reset' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:14866]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (1#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (1#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reset' (2#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:14866]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_rst_module' (3#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:16461]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_if' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:39914]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_lite_if' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:16956]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (3#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_lite_if' (4#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:16956]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (4#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_if' (5#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:39914]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_intrpt' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:40640]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_intrpt' (6#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:40640]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:39068]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_register' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:18716]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register' (7#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:18716]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:20530]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect' (8#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:20530]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:29593]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux' (9#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:29593]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module' (10#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:39068]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:64170]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:61831]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm' (11#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:61831]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:63047]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if' (12#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:63047]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sts_mngr' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:63554]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sts_mngr' (13#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:63554]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vidreg_module' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:56009]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vregister' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:53895]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vregister' (14#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:53895]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vaddrreg_mux' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:55486]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vaddrreg_mux' (15#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:55486]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vidreg_module' (16#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:56009]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:58552]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mux' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:57290]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mux' (17#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:57290]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:58265]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder' (18#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:58265]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder__parameterized0' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:58265]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder__parameterized0' (18#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:58265]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr' (19#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:58552]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr' (20#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:64170]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:53024]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen' (21#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:53024]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vid_cdc' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:13253]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vid_cdc' (22#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:13253]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sof_gen' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:41250]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sof_gen' (23#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:41250]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_linebuf' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:46218]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_afifo_builtin' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:43507]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_afifo_builtin' (34#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:43507]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:41497]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf' (35#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:41497]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized3' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized3' (35#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mm2s_linebuf' (36#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:46218]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:55429]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:53565]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (37#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (38#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (39#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (40#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (41#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (42#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (42#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (42#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (42#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (42#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (43#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (44#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (45#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (45#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (46#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (46#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (46#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (46#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (46#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (47#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (48#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (48#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (48#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (48#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (48#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (49#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_sf' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:20206]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/462e/hdl/lib_fifo_v1_0_rfs.vhd:2246]
+INFO: [Synth 8-638] synthesizing module 'xpm_fifo_sync' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1845]
+INFO: [Synth 8-638] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-638] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-256] done synthesizing module 'xpm_counter_updn' (50#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-638] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-256] done synthesizing module 'xpm_counter_updn__parameterized0' (50#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-638] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-256] done synthesizing module 'xpm_memory_base' (51#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-638] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1800]
+INFO: [Synth 8-256] done synthesizing module 'xpm_fifo_reg_bit' (52#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1800]
+INFO: [Synth 8-638] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-256] done synthesizing module 'xpm_counter_updn__parameterized1' (52#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-638] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1609]
+INFO: [Synth 8-256] done synthesizing module 'xpm_fifo_rst' (53#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1609]
+INFO: [Synth 8-638] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-256] done synthesizing module 'xpm_counter_updn__parameterized2' (53#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-638] synthesizing module 'xpm_counter_updn__parameterized3' [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-256] done synthesizing module 'xpm_counter_updn__parameterized3' (53#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1752]
+INFO: [Synth 8-256] done synthesizing module 'xpm_fifo_base' (54#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-256] done synthesizing module 'xpm_fifo_sync' (55#1) [C:/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1845]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (56#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/462e/hdl/lib_fifo_v1_0_rfs.vhd:2246]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (57#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_sf' (58#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:20206]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (59#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:53565]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_omit_wrap' [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:49597]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (60#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:49597]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (61#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/0377/hdl/axi_datamover_v5_1_vh_rfs.vhd:55429]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (62#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ipshared/8f70/hdl/axi_vdma_v6_3_rfs.vhd:69846]
+INFO: [Synth 8-256] done synthesizing module 'dma_design_1_axi_vdma_0_0' (63#1) [c:/Users/jfa49/180304_vdma_test_change/vdma_test.srcs/sources_1/bd/dma_design_1/ip/dma_design_1_axi_vdma_0_0/synth/dma_design_1_axi_vdma_0_0.vhd:106]
+Finished RTL Elaboration : Time (s): cpu = 00:03:13 ; elapsed = 00:03:14 . Memory (MB): peak = 586.777 ; gain = 267.988
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:13 ; elapsed = 00:03:15 . Memory (MB): peak = 586.777 ; gain = 267.988
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 828.348 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:03:25 ; elapsed = 00:03:28 . Memory (MB): peak = 828.348 ; gain = 509.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:25 ; elapsed = 00:03:28 . Memory (MB): peak = 828.348 ; gain = 509.559
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:25 ; elapsed = 00:03:28 . Memory (MB): peak = 828.348 ; gain = 509.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:27 ; elapsed = 00:03:30 . Memory (MB): peak = 828.348 ; gain = 509.559
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:32 ; elapsed = 00:03:36 . Memory (MB): peak = 828.348 ; gain = 509.559
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | 128 x 67(NO_CHANGE)    | W |   | 128 x 67(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:42 ; elapsed = 00:03:45 . Memory (MB): peak = 828.348 ; gain = 509.559
+Finished Timing Optimization : Time (s): cpu = 00:03:45 ; elapsed = 00:03:48 . Memory (MB): peak = 871.699 ; gain = 552.910
+Finished Technology Mapping : Time (s): cpu = 00:03:46 ; elapsed = 00:03:49 . Memory (MB): peak = 871.699 ; gain = 552.910
+Finished IO Insertion : Time (s): cpu = 00:03:47 ; elapsed = 00:03:50 . Memory (MB): peak = 871.699 ; gain = 552.910
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:47 ; elapsed = 00:03:50 . Memory (MB): peak = 871.699 ; gain = 552.910
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:47 ; elapsed = 00:03:51 . Memory (MB): peak = 871.699 ; gain = 552.910
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:47 ; elapsed = 00:03:51 . Memory (MB): peak = 871.699 ; gain = 552.910
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:47 ; elapsed = 00:03:51 . Memory (MB): peak = 871.699 ; gain = 552.910
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:47 ; elapsed = 00:03:51 . Memory (MB): peak = 871.699 ; gain = 552.910
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    35|
+|2     |FIFO36E1   |     1|
+|3     |LUT1       |   194|
+|4     |LUT2       |   167|
+|5     |LUT3       |   183|
+|6     |LUT4       |   167|
+|7     |LUT5       |   155|
+|8     |LUT6       |   280|
+|9     |RAMB36E1_1 |     1|
+|10    |SRL16E     |   103|
+|11    |FDPE       |     5|
+|12    |FDR        |   133|
+|13    |FDRE       |  1255|
+|14    |FDSE       |    46|
++------+-----------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:47 ; elapsed = 00:03:51 . Memory (MB): peak = 871.699 ; gain = 552.910
+synth_design: Time (s): cpu = 00:03:49 ; elapsed = 00:03:53 . Memory (MB): peak = 871.699 ; gain = 565.434
